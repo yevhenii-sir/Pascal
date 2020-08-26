@@ -10,7 +10,7 @@ type
 var
   used_word: used;
   word_array: mas;
-  i, count, mistake: integer;
+  i, count, mistake, all: integer;
   string_line, file_name: string;
 
 
@@ -64,11 +64,14 @@ var
   check, word_z: string;
 begin
   mistake := 0;
+  all := 0;
+  Writeln('To exit write - END');
   for var i := 1 to count do
   begin
     num := randomize_word;
     Write(Copy(word_array[num], pos('=', word_array[num]) + 2, Length(word_array[num])), ' = ');
     Readln(check);
+    if (check = 'end') or (check = 'END') then break;
     word_z := Copy(word_array[num], 1, pos('=', word_array[num]) - 2);
     if check <> word_z then begin
       Writeln('You entered incorrectly!');
@@ -76,6 +79,7 @@ begin
       Inc(mistake);
     end;
     Writeln('-------------------------');
+    Inc(all);
   end;
 end;
 
@@ -84,7 +88,7 @@ begin
   search_file;
   file_in_mas;
   test_go;
-  Writeln('Correct answers: ', count - mistake);
+  Writeln('Correct answers: ', all - mistake);
   Writeln('Not the correct answers: ', mistake);
   Readln;
 end.
