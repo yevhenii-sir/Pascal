@@ -1,0 +1,6 @@
+melon = диня
+watermelon = кавун
+raspberry = малина
+beetroot = буряк
+cherry = вишня
+grapes = виноград
