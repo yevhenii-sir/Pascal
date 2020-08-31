@@ -4,35 +4,36 @@ const
   word_count = 40;
 
 type
-  mas = array[1..word_count] of string;
+  array_all_words = array[1..word_count] of string;
   used = set of byte;
 
 var
-  used_word: used;
-  word_array: mas;
-  i, count, mistake, all: integer;
-  string_line, file_name: string;
+  numbers_used: used;
+  word_all_array: array_all_words;
+  number_of_questions_total, all_mistake, number_questions: byte;
+  file_name: string;
 
 
-procedure search_file();
+procedure search_file(var name_string: string);
 begin
   Write('Take out the TXT file name: ');
-  Readln(file_name);
-  file_name := file_name + '.txt';
-  while not fileexists(file_name) do
+  Readln(name_string);
+  name_string := name_string + '.txt';
+  while not fileexists(name_string) do
   begin
     Writeln('File Not Found');
     Write('Take out the TXT file name: ');
-    Readln(file_name);
-    file_name := file_name + '.txt';
+    Readln(name_string);
+    name_string := name_string + '.txt';
   end;
 end;
 
-procedure file_in_mas; {Wrapping lines from file to array}
+procedure file_in_mas(var name_string: string; var count: byte; var word_array: array_all_words);
 var
   text_file: text;
+  string_line: string;
 begin
-  Assign(text_file, file_name);
+  Assign(text_file, name_string);
   Reset(text_file);
   count := 1;
   while not EOF(text_file) do
@@ -45,7 +46,7 @@ begin
   Close(text_file);
 end;
 
-function randomize_word: byte; 
+function randomize_word(var count: byte; var used_word: used):byte; 
 var
   num_rnd: byte;
 begin
@@ -58,37 +59,37 @@ begin
   Result := num_rnd;
 end;
 
-procedure test_go;
+procedure test_go(var all_questions: byte; count: byte; word_array: array_all_words; var mistake: byte);
 var
   num: byte;
-  check, word_z: string;
+  input_validation, word_z: string;
 begin
   mistake := 0;
-  all := 0;
+  all_questions := 0;
   Writeln('To exit write - END');
   for var i := 1 to count do
   begin
-    num := randomize_word;
+    num := randomize_word(number_of_questions_total, numbers_used);
     Write(Copy(word_array[num], pos('=', word_array[num]) + 2, Length(word_array[num])), ' = ');
-    Readln(check);
-    if (check = 'end') or (check = 'END') then break;
+    Readln(input_validation);
+    if (input_validation = 'end') or (input_validation = 'END') then break;
     word_z := Copy(word_array[num], 1, pos('=', word_array[num]) - 2);
-    if check <> word_z then begin
+    if  input_validation <> word_z then begin
       Writeln('You entered incorrectly!');
       Writeln('Privileged answer: ', word_z);
       Inc(mistake);
     end;
     Writeln('-------------------------');
-    Inc(all);
+    Inc(all_questions);
   end;
 end;
 
 begin
   Randomize;
-  search_file;
-  file_in_mas;
-  test_go;
-  Writeln('Correct answers: ', all - mistake);
-  Writeln('Not the correct answers: ', mistake);
+  search_file(file_name);
+  file_in_mas(file_name, number_of_questions_total, word_all_array);
+  test_go(number_questions, number_of_questions_total, word_all_array, all_mistake);
+  Writeln('Correct answers: ', number_questions - all_mistake);
+  Writeln('Not the correct answers: ', all_mistake);
   Readln;
 end.
