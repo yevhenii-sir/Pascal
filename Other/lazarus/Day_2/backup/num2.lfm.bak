@@ -1,0 +1,94 @@
+object Form3: TForm3
+  Left = 240
+  Height = 185
+  Top = 139
+  Width = 305
+  Caption = 'Form3'
+  ClientHeight = 185
+  ClientWidth = 305
+  LCLVersion = '2.0.10.0'
+  object Edit1: TEdit
+    Left = 38
+    Height = 23
+    Top = 22
+    Width = 90
+    TabOrder = 0
+  end
+  object Edit2: TEdit
+    Left = 38
+    Height = 23
+    Top = 56
+    Width = 90
+    TabOrder = 1
+  end
+  object Edit3: TEdit
+    Left = 184
+    Height = 23
+    Top = 22
+    Width = 102
+    TabOrder = 2
+  end
+  object Edit4: TEdit
+    Left = 184
+    Height = 23
+    Top = 56
+    Width = 102
+    TabOrder = 3
+  end
+  object Label1: TLabel
+    Left = 20
+    Height = 15
+    Top = 26
+    Width = 13
+    Caption = 'X1'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 20
+    Height = 15
+    Top = 61
+    Width = 13
+    Caption = 'Y1'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 160
+    Height = 15
+    Top = 26
+    Width = 13
+    Caption = 'X2'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 160
+    Height = 15
+    Top = 57
+    Width = 13
+    Caption = 'Y2'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 24
+    Height = 15
+    Top = 100
+    Width = 56
+    Caption = 'Результат:'
+    ParentColor = False
+  end
+  object Edit5: TEdit
+    Left = 96
+    Height = 23
+    Top = 96
+    Width = 190
+    TabOrder = 4
+  end
+  object Button1: TButton
+    Left = 24
+    Height = 45
+    Top = 128
+    Width = 263
+    Caption = 'Натисніть!'
+    OnClick = Button1Click
+    TabOrder = 5
+  end
+end
