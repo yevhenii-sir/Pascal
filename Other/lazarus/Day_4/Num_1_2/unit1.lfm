@@ -1,0 +1,33 @@
+object Form1: TForm1
+  Left = 281
+  Height = 120
+  Top = 145
+  Width = 277
+  Caption = 'Form1'
+  ClientHeight = 120
+  ClientWidth = 277
+  LCLVersion = '2.0.10.0'
+  object Label1: TLabel
+    Left = 23
+    Height = 15
+    Top = 24
+    Width = 146
+    Caption = 'Введіть число від 1 до 999: '
+    ParentColor = False
+  end
+  object Edit1: TEdit
+    Left = 176
+    Height = 23
+    Top = 21
+    Width = 75
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 22
+    Height = 42
+    Top = 57
+    Width = 229
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+end
