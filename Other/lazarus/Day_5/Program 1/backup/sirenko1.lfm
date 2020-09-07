@@ -1,0 +1,97 @@
+object Form1: TForm1
+  Left = 87
+  Height = 190
+  Top = 341
+  Width = 320
+  Caption = 'Form1'
+  ClientHeight = 190
+  ClientWidth = 320
+  LCLVersion = '2.0.10.0'
+  object Label1: TLabel
+    Left = 16
+    Height = 15
+    Top = 28
+    Width = 61
+    Caption = '1-ое число'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 15
+    Top = 64
+    Width = 61
+    Caption = '2-ое число'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 16
+    Height = 15
+    Top = 112
+    Width = 53
+    Caption = 'Результат'
+    ParentColor = False
+  end
+  object Edit1: TEdit
+    Left = 88
+    Height = 23
+    Top = 24
+    Width = 80
+    TabOrder = 0
+  end
+  object Edit2: TEdit
+    Left = 88
+    Height = 23
+    Top = 60
+    Width = 80
+    TabOrder = 1
+  end
+  object Edit3: TEdit
+    Left = 87
+    Height = 23
+    Top = 108
+    Width = 80
+    TabOrder = 2
+  end
+  object RadioGroup1: TRadioGroup
+    Left = 192
+    Height = 105
+    Top = 24
+    Width = 113
+    AutoFill = True
+    Caption = 'Операция'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 85
+    ClientWidth = 109
+    Items.Strings = (
+      'Сумма'
+      'Разность'
+      'Произведение'
+      'Частное'
+    )
+    TabOrder = 3
+  end
+  object Button1: TButton
+    Left = 32
+    Height = 25
+    Top = 152
+    Width = 107
+    Caption = 'Вычислить'
+    OnClick = Button1Click
+    TabOrder = 4
+  end
+  object Button2: TButton
+    Left = 192
+    Height = 25
+    Top = 152
+    Width = 104
+    Caption = 'Очистить'
+    OnClick = Button2Click
+    TabOrder = 5
+  end
+end
