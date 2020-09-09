@@ -1,0 +1,11 @@
+var a,b,h,y,x:real;  
+begin  
+a:=StrToFloat(Edit1.Text); 
+b:=StrToFloat(Edit2.Text);  
+h:=StrToFloat(Edit3.Text);  
+x:=a; 
+while x<=b do  begin  
+y:=exp(x)-exp(-x)-2; 
+Memo1.Lines.Add('õ='+FloatToStr(x)+' ó='+FloatToStr(y));  
+x:=x+h;  
+end;  
