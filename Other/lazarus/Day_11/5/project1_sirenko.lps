@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="11"/>
+    <BuildModes Active="Default"/>
+    <Units Count="2">
+      <Unit0>
+        <Filename Value="project1_sirenko.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="unit1_sirenko.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="99"/>
+        <CursorPos X="5" Y="109"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+    </Units>
+    <JumpHistory Count="12" HistoryIndex="11">
+      <Position1>
+        <Filename Value="unit1_sirenko.pas"/>
+      </Position1>
+      <Position2>
+        <Filename Value="unit1_sirenko.pas"/>
+        <Caret Line="48" Column="35" TopLine="33"/>
+      </Position2>
+      <Position3>
+        <Filename Value="unit1_sirenko.pas"/>
+        <Caret Line="50" Column="35" TopLine="35"/>
+      </Position3>
+      <Position4>
+        <Filename Value="unit1_sirenko.pas"/>
+        <Caret Line="59" Column="17" TopLine="41"/>
+      </Position4>
+      <Position5>
+        <Filename Value="unit1_sirenko.pas"/>
+        <Caret Line="60" Column="39" TopLine="50"/>
+      </Position5>
+      <Position6>
+        <Filename Value="unit1_sirenko.pas"/>
+        <Caret Line="70" Column="3" TopLine="60"/>
+      </Position6>
+      <Position7>
+        <Filename Value="unit1_sirenko.pas"/>
+        <Caret Line="80" Column="23" TopLine="66"/>
+      </Position7>
+      <Position8>
+        <Filename Value="unit1_sirenko.pas"/>
+        <Caret Line="72" Column="93" TopLine="72"/>
+      </Position8>
+      <Position9>
+        <Filename Value="unit1_sirenko.pas"/>
+        <Caret Line="95" Column="69" TopLine="82"/>
+      </Position9>
+      <Position10>
+        <Filename Value="unit1_sirenko.pas"/>
+        <Caret Line="112" Column="3" TopLine="92"/>
+      </Position10>
+      <Position11>
+        <Filename Value="unit1_sirenko.pas"/>
+        <Caret Line="101" Column="21" TopLine="99"/>
+      </Position11>
+      <Position12>
+        <Filename Value="unit1_sirenko.pas"/>
+        <Caret Line="122" Column="25" TopLine="110"/>
+      </Position12>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

@@ -1,0 +1,66 @@
+object Form1: TForm1
+  Left = 256
+  Height = 267
+  Top = 145
+  Width = 147
+  Caption = 'Form1'
+  ClientHeight = 267
+  ClientWidth = 147
+  LCLVersion = '2.0.10.0'
+  object Label1: TLabel
+    Left = 16
+    Height = 15
+    Top = 18
+    Width = 9
+    Caption = 'N'
+    ParentColor = False
+  end
+  object Edit1: TEdit
+    Left = 34
+    Height = 23
+    Top = 14
+    Width = 96
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 18
+    Height = 25
+    Top = 48
+    Width = 112
+    Caption = 'Заповнити'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object ListBox1: TListBox
+    Left = 18
+    Height = 88
+    Top = 88
+    Width = 110
+    ItemHeight = 0
+    TabOrder = 2
+  end
+  object Button2: TButton
+    Left = 18
+    Height = 25
+    Top = 192
+    Width = 112
+    Caption = 'Обчилити'
+    OnClick = Button2Click
+    TabOrder = 3
+  end
+  object Edit2: TEdit
+    Left = 34
+    Height = 23
+    Top = 232
+    Width = 94
+    TabOrder = 4
+  end
+  object Label2: TLabel
+    Left = 18
+    Height = 15
+    Top = 235
+    Width = 7
+    Caption = 'K'
+    ParentColor = False
+  end
+end

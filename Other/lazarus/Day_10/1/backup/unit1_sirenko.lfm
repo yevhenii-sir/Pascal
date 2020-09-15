@@ -1,0 +1,34 @@
+object Form1: TForm1
+  Left = 393
+  Height = 240
+  Top = 102
+  Width = 241
+  Caption = 'Числа'
+  ClientHeight = 240
+  ClientWidth = 241
+  LCLVersion = '2.0.10.0'
+  object Button1: TButton
+    Left = 48
+    Height = 25
+    Top = 200
+    Width = 136
+    Caption = 'Натисніть'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Memo1: TMemo
+    Left = 16
+    Height = 154
+    Top = 40
+    Width = 208
+    TabOrder = 1
+  end
+  object Label1: TLabel
+    Left = 16
+    Height = 15
+    Top = 16
+    Width = 173
+    Caption = 'Результат: (a^2 + b^2 - c^2 = 0)'
+    ParentColor = False
+  end
+end

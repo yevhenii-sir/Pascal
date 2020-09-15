@@ -1,0 +1,19 @@
+object Form1: TForm1
+  Left = 256
+  Height = 392
+  Top = 145
+  Width = 286
+  Caption = 'График'
+  ClientHeight = 392
+  ClientWidth = 286
+  LCLVersion = '2.0.10.0'
+  object Button1: TButton
+    Left = 8
+    Height = 25
+    Top = 352
+    Width = 264
+    Caption = 'Создать график'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+end
