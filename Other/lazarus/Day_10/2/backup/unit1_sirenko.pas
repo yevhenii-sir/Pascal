@@ -45,12 +45,7 @@ begin
     memo1.Lines.text := Memo1.Lines.Text + (#13);
   end;
 
-  for i to 5 do begin
-    for j := 1 to 5 do  begin
-       Memo1.Lines.Text := Memo1.Lines.Text + ('5');
-    end;
-     memo1.Lines.text := Memo1.Lines.Text + (#13);
-  end;
+
 
 
 end;

@@ -21,14 +21,14 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="40"/>
-        <CursorPos X="37" Y="50"/>
+        <TopLine Value="38"/>
+        <CursorPos Y="48"/>
         <UsageCount Value="23"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
     </Units>
-    <JumpHistory Count="8" HistoryIndex="7">
+    <JumpHistory Count="9" HistoryIndex="8">
       <Position1>
         <Filename Value="unit1_sirenko.pas"/>
       </Position1>
@@ -60,6 +60,10 @@
         <Filename Value="unit1_sirenko.pas"/>
         <Caret Line="41" Column="22" TopLine="30"/>
       </Position8>
+      <Position9>
+        <Filename Value="unit1_sirenko.pas"/>
+        <Caret Line="50" Column="37" TopLine="40"/>
+      </Position9>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

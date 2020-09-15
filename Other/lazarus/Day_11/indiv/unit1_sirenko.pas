@@ -38,7 +38,7 @@ implementation
 
 procedure TForm1.Button1Click(Sender: TObject);
 var a: array[1..10] of real;
-    a1, d, n: real;  i: integer;
+    a1, d, sum: real;  i: integer;
 begin
   a1 := StrToFloat(Edit1.Text);
   d := StrToFloat(Edit2.Text);
@@ -47,6 +47,14 @@ begin
   for i := 2 to 10 do begin
     a[i] := a1 + d * (i - 1);
     Memo1.Lines.Add(FloatToStr(a[i]));
+  end;
+  for i := 1 to 10 do sum := sum + A[i];
+  sum := sum / 10;
+  Memo1.Lines.Add('Середнє арефметичне: ' + FloatToStr(sum));
+  Memo1.Lines.Add('Перетворений масив: ');
+  for i := 1 to 9 do begin
+  A[i] := A[i] - sum;
+  Memo1.Lines.Add(FloatToStr(a[i]));
   end;
 end;
 
